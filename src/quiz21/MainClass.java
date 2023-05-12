@@ -56,7 +56,7 @@ public class MainClass {
 								.filter(a -> a.getRegion().equals("서울")&&Integer.parseInt(a.getMonth())>=9&&Integer.parseInt(a.getPrice())>=2000)
 								.collect(Collectors.toList());
 			for(Data d : result) {
-			System.out.println(d.getRegion() +": "+ d.getMonth()+"월 " + d.getPrice()+"원");
+				System.out.println(d.getRegion() +": "+ d.getMonth()+"월 " + d.getPrice()+"원");
 			}
 			
 		} catch (Exception e) {
